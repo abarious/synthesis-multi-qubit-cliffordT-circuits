@@ -17,12 +17,12 @@ Run the notebook cells to generate a unitary, synthesize its circuit, and compar
 [Test 1](tests/Test_1.html) synthesizes this two-qubit unitary:
 
 $$
-U = \begin{bmatrix}
-1 & 0 & 0 & 0 \\
-0 & -i & 0 & 0 \\
-0 & 0 & 1 & 0 \\
+U = \left[\begin{array}{rrrr}
+1 & 0 & 0 & 0 \\[0.4em]
+0 & -i & 0 & 0 \\[0.4em]
+0 & 0 & 1 & 0 \\[0.4em]
 0 & 0 & 0 & 1
-\end{bmatrix}
+\end{array}\right]
 $$
 
 The saved output reports `True` for the circuit comparison and 23 Clifford+T gates:
@@ -34,12 +34,12 @@ The saved output reports `True` for the circuit comparison and 23 Clifford+T gat
 [Test 2](tests/Test_2.html) uses another two-qubit matrix with off-diagonal entries:
 
 $$
-U = \begin{bmatrix}
--i/\sqrt{2} & 0 & 0 & -i/\sqrt{2} \\
-0 & 1 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
+U = \left[\begin{array}{rrrr}
+-i/\sqrt{2} & 0 & 0 & -i/\sqrt{2} \\[0.4em]
+0 & 1 & 0 & 0 \\[0.4em]
+0 & 0 & 1 & 0 \\[0.4em]
 i/\sqrt{2} & 0 & 0 & -i/\sqrt{2}
-\end{bmatrix}
+\end{array}\right]
 $$
 
 Its saved output reports `True` for the circuit comparison and 76 Clifford+T gates:
